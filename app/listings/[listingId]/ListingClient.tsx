@@ -103,7 +103,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
       );
       
       if (dayCount && listing.price) {
-        setTotalPrice(dayCount * listing.price);
+        setTotalPrice(dayCount * listing.price + listing.price);
       } else {
         setTotalPrice(listing.price);
       }
